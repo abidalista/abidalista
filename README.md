@@ -1,6 +1,6 @@
 # Hi, I'm Abidal 👋
 
-📍 **Berlin ↔ Riyadh** | 🛠️ **Builder** | 🌍 **Arabic market focus**
+📍 **Berlin ↔ Riyadh** | 🛠️ **Builder** | 🌍 **AI focus**
 
 [![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=node.js&logoColor=white)](https://nodejs.org)
@@ -9,7 +9,7 @@
 [![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)](https://docker.com)
 [![Claude](https://img.shields.io/badge/-Claude-000000?style=flat-square&logo=anthropic&logoColor=white)](https://anthropic.com)
 
-> Building products for the Arabic-speaking world. Ship fast, learn faster, compound daily.
+> Building valuable products on the fast lane. Ship fast, learn faster, compound daily.
 
 ## Current Projects
 
@@ -31,5 +31,3 @@
 - Product manager who codes
 
 ---
-
-> *"€30K/month isn't a dream — it's a system. Build for markets others ignore, compound what works, cut what doesn't."*
