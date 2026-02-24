@@ -14,7 +14,7 @@
 ## Current Projects
 
 - 🛍️ **[Yalla Cancel](https://github.com/abidalista/yalla-cancel)** — Subscription tracker built for the Saudi & Arabic market *(in development)*
-- 🎉 **[Focus Fiesta](https://github.com/abidalista/focus-fiesta)** — Chrome extension that blurs YouTube distractions to keep you focused
+- 🎉 **[Focus Fiesta](https://chromewebstore.google.com/detail/paoobjaflidcjmcehlfkmdoldfjhpbhg?utm_source=item-share-cb)** — Chrome extension that blurs YouTube distractions to keep you focused
 - 🚀 **[Pass the Product](https://passtheproduct.com/)** — MVP development & product consulting for Saudi startups
 - 📖 **[Boiling Down Saudi Arabic](https://www.amazon.de/dp/B0GM91758W)** — The unconventional guide to learn Arabic (Saudi dialect)
 
