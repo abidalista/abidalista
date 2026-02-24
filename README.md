@@ -20,14 +20,13 @@
 
 ## What I Do
 
-- **AI Product Management** — Building observability & evaluation systems for healthcare AI
-- **Solo products** — Shipping tools & content for the Arabic market
-- **Writing** — Published author on Amazon KDP
+- **AI Product Management** — Building observability & evaluation systems for healthcare AI agents
+- **Solo products** — Shipping tools & content for the Saudi and European market
+- **Writing** — Published author on Amazon and poetry scraps piled in the corner of my room
 
 ## Background
 
 - Former Head of Product at Aajil (BuildNow) — B2B construction BNPL, document intelligence, fraud detection
 - Built WhatsApp chatbots, credit assessment agents, and AI-powered document extraction systems
-- Product manager who codes
 
 ---
