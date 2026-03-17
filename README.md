@@ -21,12 +21,12 @@
 
 ## What I Do
 
-- **AI Product Management** — Building observability & evaluation systems for healthcare AI agents
+- **AI Product Management** — Agent orchestration and building observability & evaluation systems for healthcare AI agents
 - **Solo products** — Shipping tools & content for the Saudi and European market
 - **Writing** — Published author on Amazon and poetry scraps piled in the corner of my room
 
 ## Background
 
-- Former Head of Product at Aajil (BuildNow) — B2B construction BNPL, document intelligence, fraud detection
+- Former Head of Product at Aajil.sa — B2B Fintech focused on BNPL, document intelligence, fraud detection
 - Built WhatsApp chatbots, credit assessment agents, and AI-powered document extraction systems
 - AI Lecturer at Kozminski University
