@@ -14,7 +14,7 @@
 ## Current Projects
 
 - 🛍️ **[Yalla Cancel](https://github.com/abidalista/yallacancel)** — Subscription tracker built for the Saudi & Arabic market
-- 🔀 **[TabFlip](https://chromewebstore.google.com/detail/tabflip/jjniphpcbkccdghajgfkdicaeephmcmp)** — Arc-style MRU tab switcher Chrome extension with visual previews
+- 🔀 **[TabFlip](https://chromewebstore.google.com/detail/tabflip/jjniphpcbkccdghajgfkdicaeephmcmp)** — Arc-style tab switcher Chrome extension for better browser experience
 - 🎉 **[Focus Fiesta](https://chromewebstore.google.com/detail/paoobjaflidcjmcehlfkmdoldfjhpbhg?utm_source=item-share-cb)** — Chrome extension that blurs YouTube distractions to keep you focused
 - 🚀 **[Pass the Product](https://passtheproduct.com/)** — MVP development & product consulting for Saudi startups
 - 📖 **[Boiling Down Saudi Arabic](https://www.amazon.de/dp/B0GM91758W)** — The unconventional guide to learn Arabic (Saudi dialect)
