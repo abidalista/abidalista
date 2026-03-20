@@ -13,7 +13,7 @@
 
 ## Current Projects
 
-- 🏗️ **[BuildSaudi](https://buildsaudi.co)** — Curated directory of companies building the future of Saudi
+- 🏗️ **[Build Saudi](https://buildsaudi.co)** — Curated directory of companies building the future of Saudi
 - 🛍️ **[Yalla Cancel](https://github.com/abidalista/yallacancel)** — Subscription tracker built for the Saudi & Arabic market
 - 🔀 **[TabFlip](https://chromewebstore.google.com/detail/tabflip/jjniphpcbkccdghajgfkdicaeephmcmp)** — Arc-style tab switcher Chrome extension for better browser experience
 - 🎉 **[Focus Fiesta](https://chromewebstore.google.com/detail/paoobjaflidcjmcehlfkmdoldfjhpbhg?utm_source=item-share-cb)** — Chrome extension that blurs YouTube distractions to keep you focused
