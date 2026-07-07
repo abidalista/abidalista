@@ -1,0 +1,12 @@
+{
+  "name": "ubereats-automation",
+  "version": "1.0.0",
+  "description": "Playwright-based UberEats grocery ordering automation",
+  "scripts": {
+    "setup": "node setup.js",
+    "order": "node order.js"
+  },
+  "dependencies": {
+    "playwright": "^1.45.0"
+  }
+}
