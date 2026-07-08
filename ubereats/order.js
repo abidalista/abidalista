@@ -1,7 +1,8 @@
 /**
  * Place a grocery order on UberEats.
- * Usage: node order.js "bananas" [--dry-run]
+ * Usage: node order.js "pickles" [--qty 2] [--dry-run]
  *
+ * --qty N    how many to add to cart (default: 1)
  * --dry-run  shows what would be ordered without actually placing it
  */
 
@@ -11,11 +12,14 @@ const fs = require('fs');
 
 const AUTH_FILE = path.join(__dirname, 'auth-state.json');
 
-const item = process.argv[2];
-const dryRun = process.argv.includes('--dry-run');
+const args = process.argv.slice(2);
+const item = args.find((a) => !a.startsWith('--'));
+const dryRun = args.includes('--dry-run');
+const qtyIndex = args.indexOf('--qty');
+const qty = qtyIndex !== -1 ? parseInt(args[qtyIndex + 1], 10) : 1;
 
 if (!item) {
-  console.error('Usage: node order.js "item name" [--dry-run]');
+  console.error('Usage: node order.js "item name" [--qty 2] [--dry-run]');
   process.exit(1);
 }
 
@@ -36,7 +40,7 @@ async function findFirstResult(page) {
   return null;
 }
 
-async function addItemToCart(page, itemName) {
+async function addItemToCart(page, itemName, quantity = 1) {
   // Search for the item on the store page
   const searchInput = page.locator('input[placeholder*="Search"], input[aria-label*="Search"]').first();
   if (await searchInput.isVisible({ timeout: 3000 }).catch(() => false)) {
@@ -61,11 +65,23 @@ async function addItemToCart(page, itemName) {
 
   await page.waitForTimeout(1500);
 
+  // Increase quantity if more than 1
+  if (quantity > 1) {
+    const increaseBtn = page.locator('button[aria-label*="increase"], button[aria-label*="Increase"], button').filter({ hasText: '+' }).first();
+    for (let i = 1; i < quantity; i++) {
+      if (await increaseBtn.isVisible({ timeout: 2000 }).catch(() => false)) {
+        if (!dryRun) await increaseBtn.click();
+        else console.log(`[dry-run] Would click "+" to set quantity to ${i + 1}`);
+        await page.waitForTimeout(300);
+      }
+    }
+  }
+
   // Add to cart
   const addBtn = page.locator('button').filter({ hasText: /add to (cart|order)/i }).first();
   if (await addBtn.isVisible({ timeout: 3000 }).catch(() => false)) {
     if (!dryRun) await addBtn.click();
-    else console.log('[dry-run] Would click "Add to cart"');
+    else console.log(`[dry-run] Would click "Add to cart" (qty: ${quantity})`);
   }
 }
 
@@ -96,7 +112,7 @@ async function placeOrder(page) {
 }
 
 async function run() {
-  console.log(`Ordering: "${item}"${dryRun ? ' (dry run)' : ''}`);
+  console.log(`Ordering: ${qty}x "${item}"${dryRun ? ' (dry run)' : ''}`);
 
   const browser = await chromium.launch({ headless: false, slowMo: 80 });
   const context = await browser.newContext({ storageState: AUTH_FILE });
@@ -119,8 +135,8 @@ async function run() {
 
   // Add item to cart
   try {
-    await addItemToCart(page, item);
-    console.log(`Added "${item}" to cart.`);
+    await addItemToCart(page, item, qty);
+    console.log(`Added ${qty}x "${item}" to cart.`);
   } catch (err) {
     console.error(`Could not add item: ${err.message}`);
     console.log('Browser is still open — you can complete the order manually.');
